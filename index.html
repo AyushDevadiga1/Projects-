@@ -4,15 +4,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>WEBPAGE</title>
 </head>
 <body>
-<header>
-    <h1>
-        Hello Everyone
+<header class="headers">
+    <h1 id="h1text" id="header-items">
+        A FORM
     </h1>
-</header>  
-<script src="demo1.js">
+</header>
+<hr>
+<div class="div-container">
+    <form class="form-page">
+        Name : <input type="text" id="name-field"  placeholder="your name">
+        <br>
+        Age     : <input type="number" id="age-field" placeholder="age must be >=18">
+    </form>
+</div>
+<ul type="1" class="lists-container">
+    <li id="list-items">item1</li>
+    <li id="list-items">item2</li>
+</ul>
+<input type="submit" onclick="submit()" class="submit-button">
+<script src="dom.js">
 </script>
+<style>
+*
+{
+color:rgb(255, 255, 255);
+background-color: rgb(0, 0, 0);
+padding: 2px;
+font-size: large;   
+}
+
+</style>
 </body>
 </html>
