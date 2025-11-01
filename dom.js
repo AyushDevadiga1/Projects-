@@ -63,7 +63,43 @@ console.log(document.forms[0]);
 // console.log(container);
 // container.insertBefore(newDiv,h1)
 
+var button = document.getElementById('button')
+var box = document.getElementById('box');
+var inputText = document.querySelector('input[type="text"]');
+inputText.addEventListener('keydown',runInputEvent);
 
-function submit(){
-    alert('Form Submitted Successfully');
+function runInputEvent(e){
+    console.log(e.target.value);
+    inputTextValue = e.target.value;
+    document.getElementsByClassName("box").innerHTML = '<h2>'+inputTextValue+'</h2>'
+}
+// button.addEventListener('click',runEvent);
+// button.addEventListener('dblclick',runEvent);
+button.addEventListener('click',runEvent);
+
+
+// box.addEventListener('mouseenter',function(){
+// console.log('Mouse Entereed');
+// });
+
+// box.addEventListener('mouseleave',function(){
+// console.log('Mouse Left');
+// });
+
+box.addEventListener('mousemove',function(e){
+// this.innerHTML = '<h2>MouseX : '+e.offsetX+'</h2> <h2>MouseY : '+e.offsetY+'</h2>';
+document.body.style.backgroundColor = `rgb(${e.offsetX%256},${e.offsetY%256},40)`;
+});
+// function buttonClick(e){
+//     var submit_text=document.getElementById('h1text');
+//     submit_text.textContent='Hello';
+//     console.log(e);
+//     console.log(e.clientX);
+//     console.log(e.ctrlKey);
+//     console.log(e.shiftKey);
+//     console.log(e.target.classList);
+// }
+
+function runEvent(e){
+    console.log('EVENT TYPE : '+e.type)
 }
