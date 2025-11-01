@@ -1,0 +1,2 @@
+ Hello from new file.
+ This file is alive.

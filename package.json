@@ -1,0 +1,27 @@
+{
+  "name": "prax",
+  "version": "1.0.0",
+  "description": "Node JS Practice",
+  "main": "demo.js",
+  "scripts": {
+    "start": "node node9-index",
+    "dev":"nodemon node9-index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AyushDevadiga1/Projects-.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AyushDevadiga1/Projects-/issues"
+  },
+  "homepage": "https://github.com/AyushDevadiga1/Projects-#readme",
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  },
+  "dependencies": {
+    "uuid": "^9.0.1"
+
+  }
+}
